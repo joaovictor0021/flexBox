@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex; /*Tornando o container flexível*/
+    justify-content: space-between; 
+    flex-direction: column; /*Fazendo com que a direção dos seus elementos do container fiquem em coluna*/
+    gap: 1rem;/*distanciar um elemento do outro*/
+}
+
+
+/*Observação: Se você remover o flex-direction os elementosa iram ficar em uma só linha porém como eu coloquei o space-between eles vão ficar afastado um do outro. Uma dica, remova o space-between e aumente o valor do gap desse jeito o espaçamento de cada quadrado será maior*/
+
+
+.container p {
+    font-size: 1.7rem;
+    color: white;
+    background: red;
+    text-align: center;/*Formatando o alinhamento do texto para center*/
+    display: flex;/*Tonando o parágrafo flexível para poder trablhar com as propriedades abaixo*/
+    align-items: center;/*Alinhando os itens no centro*/
+    justify-content: center;/*Justificando o conteúdo no centro do meu do quadrado*/
+    width: 5rem;
+    height: 5rem;
+}
